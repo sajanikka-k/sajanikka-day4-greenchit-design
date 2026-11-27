@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" modified="2026-11-27T00:00:00.000Z" agent="ChatGPT" version="24.7.17" type="device">
+  <diagram id="greenchit-context" name="Context Diagram">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="725" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="&lt;b&gt;GREENCHIT — SYSTEM CONTEXT DIAGRAM&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;C4 Level 1 | People and external software systems&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=22;fontColor=#14243A;" vertex="1" parent="1">
+          <mxGeometry x="280" y="15" width="650" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="boundary" value="&lt;b&gt;GREENCHIT SYSTEM&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#2563EB;strokeWidth=2;fontColor=#1746A2;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="425" y="125" width="340" height="490" as="geometry" />
+        </mxCell>
+        <mxCell id="green" value="&lt;b&gt;GreenChit&lt;/b&gt;&lt;br&gt;Internal reimbursement claims management system&lt;br&gt;&lt;br&gt;• Submit and track claims&lt;br&gt;• Review and approve / reject claims&lt;br&gt;• Record claim and audit history&lt;br&gt;• Export approved claims for payroll" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2563EB;strokeWidth=2;fontColor=#1746A2;align=center;verticalAlign=middle;" vertex="1" parent="boundary">
+          <mxGeometry x="465" y="230" width="260" height="285" as="geometry" />
+        </mxCell>
+        <mxCell id="claimant" value="&lt;b&gt;Claimant&lt;/b&gt;&lt;br&gt;Submits claims and receipt images" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F1F8;strokeColor=#527A9B;strokeWidth=2;fontColor=#23445F;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="20" y="150" width="270" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="manager" value="&lt;b&gt;Line Manager&lt;/b&gt;&lt;br&gt;Approves, rejects or requests information" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F1F8;strokeColor=#527A9B;strokeWidth=2;fontColor=#23445F;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="20" y="265" width="270" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="finance" value="&lt;b&gt;Finance Officer&lt;/b&gt;&lt;br&gt;Exports approved claims" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F1F8;strokeColor=#527A9B;strokeWidth=2;fontColor=#23445F;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="20" y="380" width="270" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="auditor" value="&lt;b&gt;Auditor&lt;/b&gt;&lt;br&gt;Reviews claim and audit history" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F1F8;strokeColor=#527A9B;strokeWidth=2;fontColor=#23445F;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="20" y="495" width="270" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="entra" value="&lt;b&gt;Microsoft Entra ID&lt;/b&gt;&lt;br&gt;Single sign-on / identity provider" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEF1F5;strokeColor=#7A8796;strokeWidth=2;fontColor=#344256;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="900" y="145" width="275" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="teams" value="&lt;b&gt;Microsoft Teams&lt;/b&gt;&lt;br&gt;Manager approval notifications" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEF1F5;strokeColor=#7A8796;strokeWidth=2;fontColor=#344256;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="900" y="260" width="275" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="email" value="&lt;b&gt;Email Service&lt;/b&gt;&lt;br&gt;Fallback email notifications" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEF1F5;strokeColor=#7A8796;strokeWidth=2;fontColor=#344256;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="900" y="375" width="275" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="sharepoint" value="&lt;b&gt;SharePoint&lt;/b&gt;&lt;br&gt;Receives approved-claims CSV" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEF1F5;strokeColor=#7A8796;strokeWidth=2;fontColor=#344256;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="900" y="490" width="275" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="payroll" value="&lt;b&gt;Payroll Automation&lt;/b&gt;&lt;br&gt;Reads CSV from SharePoint" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF4E5;strokeColor=#C58B36;strokeWidth=2;fontColor=#80551B;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="900" y="605" width="275" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="Submits claims [HTTPS]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=11;labelBackgroundColor=#F7F9FC;" edge="1" parent="1" source="claimant" target="green">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="Reviews / decides [HTTPS]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=11;labelBackgroundColor=#F7F9FC;" edge="1" parent="1" source="manager" target="green">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="Requests CSV export [HTTPS]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=11;labelBackgroundColor=#F7F9FC;" edge="1" parent="1" source="finance" target="green">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" value="Views audit history [HTTPS]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=11;labelBackgroundColor=#F7F9FC;" edge="1" parent="1" source="auditor" target="green">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="Authenticates users [OIDC]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=11;labelBackgroundColor=#F7F9FC;" edge="1" parent="1" source="green" target="entra">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" value="Sends approval cards [HTTPS webhook]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=11;labelBackgroundColor=#F7F9FC;" edge="1" parent="1" source="green" target="teams">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" value="Sends fallback email [email service]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=11;labelBackgroundColor=#F7F9FC;" edge="1" parent="1" source="green" target="email">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" value="Uploads payroll CSV [Graph API / HTTPS]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=11;labelBackgroundColor=#F7F9FC;" edge="1" parent="1" source="green" target="sharepoint">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" value="Reads CSV" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=11;labelBackgroundColor=#F7F9FC;" edge="1" parent="1" source="sharepoint" target="payroll">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
